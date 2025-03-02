@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../navbar/nav.css">
+
+    <title>GKCLASSES</title>
+    <style>
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  color: #444;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1a202c;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #fff;
+  flex: 1 1 calc(48% - 20px);
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-header i {
+  font-size: 1.5rem;
+}
+
+.card-content {
+  padding: 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-content li {
+  margin-bottom: 10px;
+}
+
+/* Header Image */
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensures the container takes up the full width */
+}
+
+.header-image img {
+  width: 40%;  
+  max-width: 100%;  
+  height: auto;     
+  object-fit: contain; 
+}
+
+
+/* Course Details Section */
+.course-details {
+  background-color: #e9f5fc;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #1a202c;
+}
+
+.course-details p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.course-details strong {
+  color: #2575fc;
+}
+
+/* Call-to-Action Button Wrapper */
+.cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .header-image img {
+    height: auto;
+  }
+
+  .course-details {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid" data-aos="fade-right">
+      <a class="navbar-brand" href="#">GK COMPUTER CLASSES</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" data-aos="fade-down-left">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../HOME/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../aboutus/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../courses/course.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../infraa/infra.html">Infrastructure</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br>
+
+  <div class="container" data-aos="fade-right">
+    <h1>Explore Our Free Computer Courses</h1>
+    <div class="cards">
+        <!-- Basic Computer Skills -->
+        <div class="card" data-aos="fade-up-left">
+            <div class="card-header" data-aos="flip-down">
+                <i class="fas fa-desktop"></i>
+                Basic Computer Skills
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Introduction to computers and operating systems</li>
+                    <li>MS Office (Word, Excel, PowerPoint) basics</li>
+                    <li>Internet browsing and email handling</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tally -->
+        <div class="card" data-aos="fade-up-right">
+            <div class="card-header" data-aos="flip-up">
+                <i class="fas fa-calculator"></i>
+                Tally
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Fundamentals of accounting with Tally</li>
+                    <li>Voucher entry and ledger creation</li>
+                    <li>Understanding reports like profit & loss</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CCC -->
+        <div class="card" data-aos="fade-up-right">
+            <div class="card-header" data-aos="flip-up">
+                <i class="fas fa-book"></i>
+                CCC (Course on Computer Concepts)
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Overview of basic IT literacy</li>
+                    <li>Digital payment systems</li>
+                    <li>Concepts of the Internet and cybersecurity</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tally Prime -->
+        <div class="card" data-aos="fade-up-left">
+            <div class="card-header" data-aos="flip-down">
+                <i class="fas fa-chart-line"></i>
+                Tally Prime
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Advanced features of Tally Prime</li>
+                    <li>GST implementation</li>
+                    <li>Inventory and payroll management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+        <!-- Header Image -->
+ <div class="header-image" data-aos="zoom-in-down">
+    <img src="d.png" alt="GK Computer Classes Header Image">
+  </div>  
+
+        <!-- New Section for Course Details -->
+        <div class="course-details" data-aos="zoom-in-left">
+            <p><strong>Duration:</strong> 1-3 months per course</p>
+            <p><strong>Eligibility:</strong> Open to students and adults of all age groups</p>
+        </div>
+
+      <!-- Call-to-Action Button -->
+<div class="cta-button-wrapper">
+  <a href="#" class="cta-button">Enroll Now</a>
+</div>
+
+
+      <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  AOS.init({
+      duration: 800,
+      offset: 200,
+  });
+  </script>
+</body>
+</html>
