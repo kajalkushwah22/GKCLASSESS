@@ -215,5 +215,19 @@
         offset: 200,
     });
     </script>
+  
+<script>
+    fetch('about.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('content').innerHTML = data);
+</script>
+
+  <script>
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "styles.css";
+    document.head.appendChild(link);
+</script>
+
 </body>
 </html>
